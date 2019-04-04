@@ -3,6 +3,7 @@ import './App.css';
 import List from './components/list';
 import Form from './components/formfunction';
 import Tree from './components/treeviewfunction';
+import CardsList from './components/cardsList';
 
 class App extends Component {
 
@@ -92,6 +93,8 @@ class App extends Component {
           <br/>
           <br/>
           <Tree items={this.state.datalist} />
+          <br/>
+          <CardsList/>
         </div>
 
     );
