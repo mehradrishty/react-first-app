@@ -16,7 +16,12 @@ export default class FormClass extends React.Component{
     }
 
     handleInputChange(evt) {
-        this.setState({ [evt.target.name]: evt.target.value });
+        if(evt.target.type != "checkbox"){
+            this.setState({ [evt.target.name]: evt.target.value });
+        }else {
+            this.setState({ [evt.target.name]: evt.target.checked });
+        }
+
     }
 
     render(){

@@ -27,6 +27,9 @@ export default class ListClass extends React.Component{
                         <td onClick={() => this.props.onItemSort('gender')}>
                             Gender
                         </td>
+                        <td onClick={() => this.props.onItemSort('isActive')}>
+                            Is Active
+                        </td>
                         <td>
                             Delete
                         </td>
@@ -49,6 +52,9 @@ export default class ListClass extends React.Component{
                             </td>
                             <td>
                                 {item.gender}
+                            </td>
+                            <td>
+                                <input type='checkbox' checked={item.isActive} readOnly />
                             </td>
                             <td onClick={()=> this.props.onItemDelete(item)}>X</td>
                         </tr>

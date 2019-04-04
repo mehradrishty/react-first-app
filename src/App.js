@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import List from './components/list';
-import Form from './components/form';
-import Tree from './components/treeview';
+import Form from './components/formfunction';
+import Tree from './components/treeviewfunction';
 
 class App extends Component {
 
